@@ -1,13 +1,12 @@
+import NavBar from "./menu/NavBar";
 
-export default function Layout (props) {
+export default function Layout(props) {
     console.log(props)
     return (
         <>
-            <header>
-                HEADER
-            </header>
+            <NavBar />
             <main>
-                { props.children }
+                {props.children}
             </main>
             <footer>
                 FOOTER

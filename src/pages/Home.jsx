@@ -1,11 +1,12 @@
 import React from "react";
+import Layout from "../componets/Layout"
 
 const Home = () => {
     return (
-        <div>
+        <Layout>
             <h1>Home</h1>
             <p>Bem-vindo à página inicial</p>
-        </div>
+        </Layout>
     )
 }
 
