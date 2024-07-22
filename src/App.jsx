@@ -4,6 +4,7 @@ import NavBar from './componets/menu/NavBar';
 import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Contato from './pages/Contato';
+import UserPage from './pages/UserPage'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/user/:id" element={<UserPage />} />
           </Routes>
         </div>
       </div>

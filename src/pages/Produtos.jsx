@@ -1,11 +1,18 @@
 import React from "react";
 import Layout from "../componets/Layout"
+import users from "../api/users";
 
 const Produto = () => {
+    console.log(users);
     return (
         <Layout>
-            <h1>Produtos</h1>
-            <p>Lista de produtos</p>
+            { users.map(function (user) {
+                return (
+                    <h2>
+                        <a href={"/user/" + user.id}>{user.id} - {user.email}</a>
+                    </h2>
+                )
+            }) }
         </Layout>
     )
 }

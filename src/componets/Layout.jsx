@@ -1,7 +1,6 @@
 import NavBar from "./menu/NavBar";
 
 export default function Layout(props) {
-    console.log(props)
     return (
         <>
             <NavBar />
