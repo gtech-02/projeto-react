@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Contato from './pages/Contato';
 import UserPage from './pages/UserPage'
+import Filters from './pages/Filters';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/filters" element={<Filters />} />
             <Route path="/user/:id" element={<UserPage />} />
           </Routes>
         </div>
